@@ -843,7 +843,7 @@ module.exports = {
     }
 
     function continueProcessing (onProgress = undefined) {
-      return videoCapture.process(name, cname, 0, ffmpegChaptersConfig, onProgress)
+      return videoCapture.process(name, cname, videoCompression, ffmpegChaptersConfig, onProgress)
     }
 
     if (quiet) {

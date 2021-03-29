@@ -462,8 +462,6 @@ export async function open (browser: Browser, url, options: any = {}): Promise<B
 
   const userCSSPath = path.join(profileDir, 'chrome')
 
-  // TODO: document launchOptions.firefox
-
   if (!await fs.pathExists(path.join(userCSSPath, 'userChrome.css'))) {
     try {
       await fs.mkdir(userCSSPath)

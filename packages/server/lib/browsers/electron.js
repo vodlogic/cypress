@@ -109,8 +109,8 @@ module.exports = {
     const defaults = {
       x: state.browserX,
       y: state.browserY,
-      width: state.browserWidth || 1920,
-      height: state.browserHeight || 1080,
+      width: state.browserWidth || 1280,
+      height: state.browserHeight || 720,
       devTools: state.isBrowserDevToolsOpen,
       minWidth: 100,
       minHeight: 100,

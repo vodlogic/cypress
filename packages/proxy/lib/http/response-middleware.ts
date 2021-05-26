@@ -79,7 +79,7 @@ function resContentTypeIs (res: IncomingMessage, contentType: string) {
 
 function resContentTypeIsJavaScript (res: IncomingMessage) {
   return _.some(
-    ['application/javascript', 'application/x-javascript', 'text/javascript']
+    ['application/javascript', 'application/x-javascript', 'text/javascript', 'application/xhtml+xml']
     .map(_.partial(resContentTypeIs, res)),
   )
 }
